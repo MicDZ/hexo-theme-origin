@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <strong>简体中文</strong> | <a href="https://github.com/MicDZ/hexo-theme-origin/blob/main/README.en.md">English</a>
+  <a href="https://github.com/MicDZ/hexo-theme-origin/blob/main/README.md">简体中文</a> | <strong>English</strong>
 </p>
 
 
