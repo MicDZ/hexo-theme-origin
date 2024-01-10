@@ -158,6 +158,32 @@
         display: flex;
         justify-content: space-between; 
     }
+    .site-list {
+        /* flex */
+        display: flex;
+        justify-content: space-between; 
+    }
+    .site-list img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .site-card {
+        width: 20%;
+        height: 10%;
+        padding: 10px;
+        margin-bottom: 1%;
+
+        /* 纵向居中 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .site-card p {
+        font-family: 'Times New Roman', Times, serif;
+    }
     .mode {
     position: absolute;
     display: block;

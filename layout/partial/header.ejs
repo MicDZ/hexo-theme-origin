@@ -37,6 +37,7 @@
           <a href="<%= config.root %>" class="ml"><%= __('index.home') %></a>
           <a href="<%= config.root %>archives" class="ml"><%= __('index.archives') %></a>
           <a href="<%= config.root %>about" class="ml"><%= __('index.about') %></a>
+          <a href="<%= config.root %>friends" class="ml"><%= __('index.friends') %></a>
           <% for (name in theme.menu) { %>
             <% if (theme.menu[name]) { %>
             <a href="<%- url_for(theme.menu[name]) %>" class="ml"><%- name %></a>
