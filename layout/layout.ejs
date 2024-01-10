@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+
+<head>
+  <meta charset="utf-8">
+  <%
+  if (!config.author) {
+    config.author = ""
+  }
+
+  var title = title = config.title;
+  if (is_archive()){
+    title = 'All Posts - ' + config.author;
+  } else if (is_post()){
+    title = page.title;
+  } else if (is_page()){
+    title = page.title + ' - ' + config.author;
+  } else if (is_tag()){
+    title = 'Posts Related to ' + page.tag;
+  }
+  %>
+  <title><%= title %></title>
+
+  <%- css('css/custom.css') %>
+  <%- css('css/main.css') %>
+  <%- css('css/normalize.css') %>
+  <%- partial('partial/style') %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="icon" type="image/png" href="<%- theme.favicon %>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" />
+
+  <!-- KaTeX support -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.js" integrity="sha384-ImWHyYvDPlRzwFnvLhG9Jcpm/7qL4SVIuJK0C6Rj+Mf7fpeNJCLCynC+EVz4kCSA" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <%- partial('partial/header') %>
+          <div>
+            <div class="trans">
+              <%- body %>
+            </div>
+            <%- partial('partial/footer') %> 
+          </div>
+    
+        </div>
+    
+      </div>
+</body>
+
+</html>

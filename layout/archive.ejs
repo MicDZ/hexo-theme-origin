@@ -1,0 +1,20 @@
+
+<h2><%= __('index.all_posts') %></h2>
+<% page.posts.each(function(post) { %>
+    <article>
+      
+      <div class="row">
+
+        <div class="article-list mb-3">
+          <p class="info left"><%- full_date(post.date, 'll') %></p>
+          <a href="<%- url_for(post.path) %>" class="">
+            <% if (post.title == "") { %>
+              no title
+            <% } else { %>
+              <%- post.title %>
+            <% } %>
+          </a>
+      </div>
+      </div>
+    </article>
+<% }) %>

@@ -1,0 +1,35 @@
+
+<% var levelCount = [0, 0, 0, 0, 0, 0]; %>
+<% var currentLevel = 0; %>
+<title><%= page.title %></title>
+<% if (!page.independent) { %>
+<h1><%- page.title %></h1>
+   
+<div class="right">
+<%- list_tags(page.tags, {class: 'classtest', show_count: false, style: false}) %> — <p class="info"><%- full_date(page.date, 'll') %></p>
+</div>
+<hr> 
+<% } %>
+
+<%- page.content%>
+
+<p class="right info">
+    <% if (!page.independent) { %>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              var levelCount = [0, 0, 0, 0, 0];
+              var headings = document.querySelectorAll('h2, h3, h4, h5, h6');
+          
+              headings.forEach(function(heading) {
+                var titleLevel = parseInt(heading.tagName.charAt(1)-1);
+                if (!isNaN(titleLevel)) {
+                  levelCount[titleLevel - 1]++;
+                  heading.innerHTML = levelCount.slice(0, titleLevel).join('.') + '&nbsp;' + heading.innerHTML;
+                }
+              });
+            });
+        </script>
+    <%- list_tags(page.tags, {class: 'classtest', show_count: false, style: false}) %> — <%- full_date(page.date, 'll') %>
+    <% } %>
+</p>
+

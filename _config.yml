@@ -1,0 +1,17 @@
+max_post: 5
+favicon: /img/h.jpeg
+
+menu:
+
+email: me@micdz.cn
+about_brief: 
+  author: "我是MicDZ"
+  avatar: /img/h.jpeg
+  info: "这里是我的博客，至今平稳运行四年，用于记录生活和学习。"
+  desc: "HUST - EIC - B.Eng. in Communication Engineering"
+
+tcolor: 0FA0CE
+
+footer: true
+
+github: https://github.com/micdz

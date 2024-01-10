@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="column">
+      <!-- Main information, edit it on theme/_config.yml -->
+      <div class="column about_brief mb-3">
+        <!-- Main information, edit it on theme/_config.yml -->
+        <h2 class="mb-3"><%= theme.about_brief.author %></h2>
+        <p><%= theme.about_brief.info %></p>
+        <p><%= theme.about_brief.desc %></p>
+      </div>
+      <!-- <p><%= config.description %></p> -->
+    </div>
+  </div>
+  <div>
+    <h2><%= __('index.recent') %></h2>
+    <% site.posts.sort('date', 'desc').limit(theme.max_post).forEach(function(post){ %>
+    
+    <div class="article-list mb-3">
+        <p class="info left"><%- full_date(post.date, 'll') %></p>
+        <a href="<%- url_for(post.path) %>" >
+            <% if (post.title == "") { %>
+            no title
+            <% } else { %>
+            <%- post.title %>
+            <% } %>
+        </a>
+    </div>
+    <% }) %>
+  </div>
+  
+  
+  <h4 class="right"> <a href="<%= config.root %>archives"><%= __('index.all_posts') %></a></h4>

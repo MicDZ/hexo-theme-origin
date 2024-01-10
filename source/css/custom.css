@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@font-face {
+    font-family: 'Noto Serif SC';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');  
+   /* 限制仅中文使用该字体 */
+   unicode-range: U+4E00-9FA5; 
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+    /* 限制仅英文使用该字体 */
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+}
+  
+    html {
+    overflow: auto;
+    }
+
+    img {
+    max-width: 100%;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1%;
+    }
+
+    @media (min-width: 550px) {
+    /*
+    Side by side gallery
+    use with </> alignment
+    e.g.
+    [_gallery >](imgages/test.jpg)
+    */
+    img[alt~="_gallery"] {
+        max-width: 49.5%;
+    }
+
+    /* Aligned to the right */
+    img[alt$=">"] {
+        float: right;
+    }
+
+    /* Aligned to the left */
+    img[alt$="<"] {
+        float: left;
+    }
+
+    /* Centered image */
+    img[alt$="><"] {
+        display: block;
+        margin: auto;
+        float: none !important;
+    }
+    }
+
+    .center {
+    text-align: center;
+    }
+
+    .left {
+        display: flex; /* 设置容器为flex布局 */
+        flex-wrap: wrap;
+        justify-content: flex-start; /* 将子项目向左对齐 */
+    }
+    /* 右对齐 */
+    .right {
+        display: flex; /* 设置容器为flex布局 */
+        flex-wrap: wrap;
+        justify-content: flex-end; /* 将子项目向右对齐 */
+    }
+
+    .lit {
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    font-weight: 300;
+    }
+
+    .little-svg {
+    fill: #fff;
+    }
+
+    .ml-0 {
+    margin-left: 0.7rem;
+    }
+
+    .ml {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    }
+
+    .ml-1 {
+    margin-left: 5rem;
+    }
+
+    .bottom {
+
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
+    }
+    .info {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
+    }
+    .site-title {
+        font-family: 'Times New Roman','LXGW WenKai', sans-serif;  
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    .about_brief {
+        font-family: 'Times New Roman','LXGW WenKai' sans-serif; 
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    }
+
+    .mb-1 {
+    margin-bottom: 0px;
+    }
+
+    .mb-2 {
+    margin-bottom: 5px;
+    }
+
+    .mb-3 {
+    margin-bottom: 20px;
+    }
+
+    .mr {
+    margin-right: 32px;
+    }
+
+    .mt-0 {
+    margin-top: 0px;
+    }
+
+    .mt-2 {
+    margin-top: 3rem;
+    }
+
+    .mt-3 {
+    margin-top: 4rem;
+    }
+
+    .mx-auto {
+    margin: auto;
+    }
+    .article-list {
+        /* flex */
+        display: flex;
+        justify-content: space-between; 
+    }
+    .mode {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    .text-center {
+    text-align: center;
+    }
+
+    .text-right {
+    text-align: right;
+    }
+
+    .tag-link {
+    margin-right: 10px;
+    }
+
+    .about {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    }
+
+    code:not(pre code) {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 0px 2px;
+    font-size: 85%;
+    }
+
+    body.darkmode code:not(pre code) {
+    background-color: rgb(65, 65, 65);
+    }
+
+    /* blockquote */
+    blockquote {
+    font-family: 'Inter';
+    background-color: rgba(148, 148, 149, 0.08) ;
+    margin: 1.5em 0px;
+    padding: 1.1em 20px 1px 20px;
+    font-style: italic;
+    }
+
+    blockquote footer {
+    font-family: 'Inter';
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    }
+
+    blockquote footer cite:before {
+    content: "—";
+    padding: 0 0.5em;
+    }
+
+    /* Scroll bar */
+    ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: rgb(128 128 128 / 70%);
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(128 128 128 / 20%);
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+    background-color: rgb(128 128 128 / 100%);
+    }
+
+    /* Footer */
+    a.footer-link:hover,
+    a.footer-link:focus {
+    cursor: pointer;
+    }
+
+    .svg-hov {
+    transition: all .2s ease-in-out;
+    }
+    .svg-hov:hover {
+    transform: translateY(-3px);
+    transition: all .2s ease-in-out;
+
+    }
+
+    .hexo {
+    fill: #03adfc;
+    vertical-align: middle;
+    padding-bottom: 4px;
+    }
+
+    .github {
+    fill: #63636F;
+    }
+    .linkedin {
+    fill: #0073b1;
+    }
+    .twitter {
+    fill: #1DA1F2;
+    }
+    .instagram {
+    fill: #E4405F
+    }
+    .stackoverflow {
+    fill: #ca7516;
+    }
+    .nanobar {
+    left: 0;
+    }
+
+    body {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    }
+
+    body.darkmode {
+    background: rgb(34, 34, 38);
+    color: rgb(230, 230, 230);
+    }
+
+    .trans {
+    animation: transitionPlay 0.7s;
+    }
+
+    @keyframes transitionPlay {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+    }
+
+    .hidden {
+    display: none;
+    }
+
+    #comments {
+    text-align: center;
+    }
+
+    #copyright {
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    font-size: 1.5rem;
+    }
+
+    .posisi {
+    text-align: center;
+    }
+
+    @media (min-width: 550px) {
+    .posisi {
+        text-align: right;
+    }
+
+    #comments {
+        text-align: left;
+    }
+
+    #madewith {
+        text-align: left;
+    }
+
+}
