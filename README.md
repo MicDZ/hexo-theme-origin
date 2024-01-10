@@ -1,7 +1,7 @@
 # origin
 
 <p align="center">
-  <img src="./401shots_so.png" />
+  <img src="./assets/401shots_so.png" />
 </p>
 <p align="center">
 	 一个极简的hexo主题，记录你的思潮泉涌。

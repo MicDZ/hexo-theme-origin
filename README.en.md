@@ -1,7 +1,7 @@
 # origin
 
 <p align="center">
-  <img src="./401shots_so.png" />
+  <img src="./assets/401shots_so.png" />
 </p>
 <p align="center">
 	 A minimalist hexo theme to record your thoughts as they spring to mind.
