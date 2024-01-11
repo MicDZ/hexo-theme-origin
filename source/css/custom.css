@@ -184,6 +184,10 @@
     .site-card p {
         font-family: 'Times New Roman', Times, serif;
     }
+    .article p {
+
+        text-indent: 2em;
+    }
     .mode {
     position: absolute;
     display: block;
