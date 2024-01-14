@@ -33,3 +33,6 @@
     <% } %>
 </p>
 
+<% if (!page.independent) { %>
+<%- partial("partial/toc", {post: page}) %> 
+<% } %>

@@ -373,3 +373,67 @@
     }
 
 }
+
+/* 目录 */
+
+#article-toc-inner:after,#article-toc-inner:before,.inner:after,.inner:before {
+    content: "";
+    display: table
+}
+
+#article-toc-inner:after,.inner:after {
+    clear: both
+}
+
+#article-toc {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 16%;
+}
+
+@media screen and (max-width:900px) {
+    #article-toc {
+        display: none;
+    }
+}
+
+#article-toc-inner {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#article-toc-inner .toc {
+    font-size: 1.5rem;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}
+
+#article-toc-inner .toc-item {
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+}
+
+#article-toc-inner .toc-child {
+    padding: 0;
+    margin-left: 1em;
+    line-height: 0;
+}
+
+#article-toc-inner .toc-child .toc-item {
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+}
+
+#article-toc-inner  a {
+    font-size: 1.4rem;
+    /* 取消下划线 */
+    text-decoration: none;
+}

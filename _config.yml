@@ -15,3 +15,6 @@ tcolor: 0FA0CE
 footer: true
 
 github: https://github.com/micdz
+
+toc:
+  enable: true
