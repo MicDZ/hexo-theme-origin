@@ -56,6 +56,28 @@
     }
     }
 
+    table {
+        /* width: 95%; */
+        border-collapse: collapse;
+        margin: 0 auto; /* 居中 */
+        /* 居中 */
+        text-align: center;
+      }
+      /* 论文三线表风格 */
+        table th, table td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f2f2f2;
+        }
+        table tr:nth-child(2n+1) {
+            background-color: #fff;
+        }
+
     .center {
     text-align: center;
     }
@@ -415,7 +437,7 @@
 }
 
 #article-toc-inner .toc-item {
-    line-height: 1.8;
+    line-height: 1.4;
     padding: 0;
     margin: 0;
 }

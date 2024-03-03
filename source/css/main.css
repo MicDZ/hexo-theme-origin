@@ -494,13 +494,14 @@
   ul ol,
   ol ol,
   ol ul {
-    margin: 1.5rem 0 1.5rem 3rem;
+    margin: 0 0 0 3rem;
     font-size: 90%;
   }
   
   li {
-    font-family: 'Noto Serif SC', 'Times New Roman', sans-serif;
-    font-weight: bold;
+    font-family:  'Times New Roman','Noto Serif SC', sans-serif;
+    /* font-weight: bold; */
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
