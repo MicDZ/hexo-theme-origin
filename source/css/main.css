@@ -272,7 +272,7 @@
   } */
   
   p {
-    font-family:  'Times New Roman','LXGW WenKai', sans-serif; 
+    font-family:  'Times New Roman','Noto Serif SC', sans-serif; 
     font-size: 1.8rem;
 
     margin-top: 0.5rem;
@@ -280,7 +280,7 @@
   }
 
   b {
-    font-family:  'Times New Roman','LXGW WenKai', sans-serif; 
+    font-family:  'Times New Roman','Noto Serif SC', sans-serif; 
     font-weight: 500;
   }
 
